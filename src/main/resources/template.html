@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>simple-httpd</title>
+        <style>
+            div > a {
+                display: block;
+                text-decoration: none;
+                font-size: 28px;
+                margin-left: 12px;
+            }
+            a.directory {
+                color: cornflowerblue;
+            }
+            div:has(a):hover {
+                background-color: lightgray;
+            }
+            a.file {
+                color: lightcoral;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple HTTPd Server</h1>
+        <h3 style="color:cornflowerblue">Blue: directory</h3>
+        <h3 style="color: lightcoral">Red: file</h3>
+        %s
+    </body>
+</html>
